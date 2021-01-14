@@ -1,24 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rFi-XA-bXu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <scene sceneID="DyA-Hu-pkI">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="rFi-XA-bXu" customClass="ViewController" customModule="ContactsMockup" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nAe-XP-opi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsR-AE-SJD">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="244"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KN8-UM-zpg">
+                                <rect key="frame" x="0.0" y="244" width="414" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ContentCell" id="6ij-GO-7mJ" customClass="ContentCell" customModule="ContactsMockup" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6ij-GO-7mJ" id="PiS-Wk-xcU">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Dfz-rI-xrx">
+                                                    <rect key="frame" x="20" y="0.0" width="374" height="43.5"/>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="Dfz-rI-xrx" secondAttribute="bottom" priority="999" id="CYe-7T-1qe"/>
+                                                <constraint firstItem="Dfz-rI-xrx" firstAttribute="leading" secondItem="PiS-Wk-xcU" secondAttribute="leading" constant="20" symbolic="YES" id="OiR-Bg-9Oj"/>
+                                                <constraint firstItem="Dfz-rI-xrx" firstAttribute="top" secondItem="PiS-Wk-xcU" secondAttribute="top" id="SdW-FB-OIT"/>
+                                                <constraint firstAttribute="trailing" secondItem="Dfz-rI-xrx" secondAttribute="trailing" constant="20" symbolic="YES" id="Vtf-KR-nkA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="stackView" destination="Dfz-rI-xrx" id="oSH-D0-TBG"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="rFi-XA-bXu" id="tjo-gV-UC1"/>
+                                    <outlet property="delegate" destination="rFi-XA-bXu" id="vnG-0e-oIC"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAG-hb-bDW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="200"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ProfilePicture" translatesAutoresizingMaskIntoConstraints="NO" id="UT8-7E-fBO" customClass="RoundedImageView" customModule="ContactsMockupKit">
+                                        <rect key="frame" x="138" y="10" width="138.5" height="138.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="UT8-7E-fBO" secondAttribute="height" multiplier="1:1" id="9gv-Yr-qLD"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="1000" text="Rob Ryan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bhx-UB-ehg">
+                                        <rect key="frame" x="153.5" y="158.5" width="107" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="UT8-7E-fBO" firstAttribute="centerX" secondItem="jAG-hb-bDW" secondAttribute="centerX" id="07o-Ho-gLO"/>
+                                    <constraint firstItem="Bhx-UB-ehg" firstAttribute="top" secondItem="UT8-7E-fBO" secondAttribute="bottom" constant="10" id="LSi-WE-VFj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Bhx-UB-ehg" secondAttribute="bottom" constant="10" id="XHH-md-W7c"/>
+                                    <constraint firstItem="UT8-7E-fBO" firstAttribute="top" secondItem="jAG-hb-bDW" secondAttribute="top" constant="10" id="jk5-Km-JJe"/>
+                                    <constraint firstItem="Bhx-UB-ehg" firstAttribute="centerX" secondItem="jAG-hb-bDW" secondAttribute="centerX" id="kSG-ld-pET"/>
+                                    <constraint firstAttribute="height" constant="200" id="r4p-Ia-jAh"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="a1d-Fb-xG6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xsR-AE-SJD" firstAttribute="leading" secondItem="jAG-hb-bDW" secondAttribute="leading" id="5tV-FY-JhB"/>
+                            <constraint firstAttribute="top" secondItem="xsR-AE-SJD" secondAttribute="top" id="Fh2-H1-CgI"/>
+                            <constraint firstItem="KN8-UM-zpg" firstAttribute="top" secondItem="a1d-Fb-xG6" secondAttribute="top" constant="200" id="MiO-jq-t33"/>
+                            <constraint firstItem="jAG-hb-bDW" firstAttribute="top" secondItem="a1d-Fb-xG6" secondAttribute="top" id="SXU-EC-6fP"/>
+                            <constraint firstItem="a1d-Fb-xG6" firstAttribute="trailing" secondItem="KN8-UM-zpg" secondAttribute="trailing" id="aU3-aO-Cjk"/>
+                            <constraint firstItem="xsR-AE-SJD" firstAttribute="trailing" secondItem="jAG-hb-bDW" secondAttribute="trailing" id="ax9-1E-xWp"/>
+                            <constraint firstItem="a1d-Fb-xG6" firstAttribute="bottom" secondItem="KN8-UM-zpg" secondAttribute="bottom" id="exz-TW-efu"/>
+                            <constraint firstItem="xsR-AE-SJD" firstAttribute="bottom" secondItem="jAG-hb-bDW" secondAttribute="bottom" id="gve-Ne-L4A"/>
+                            <constraint firstItem="KN8-UM-zpg" firstAttribute="leading" secondItem="a1d-Fb-xG6" secondAttribute="leading" id="sxp-bx-7yv"/>
+                            <constraint firstItem="a1d-Fb-xG6" firstAttribute="trailing" secondItem="jAG-hb-bDW" secondAttribute="trailing" id="tX9-fa-bCs"/>
+                            <constraint firstItem="jAG-hb-bDW" firstAttribute="leading" secondItem="a1d-Fb-xG6" secondAttribute="leading" id="zfg-nC-cAd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="backgroundView" destination="xsR-AE-SJD" id="w3z-5x-aZb"/>
+                        <outlet property="headerView" destination="jAG-hb-bDW" id="IQ6-5h-39L"/>
+                        <outlet property="heightConstraint" destination="r4p-Ia-jAh" id="m4Z-Ew-oBF"/>
+                        <outlet property="profileLabel" destination="Bhx-UB-ehg" id="NpC-rM-gCY"/>
+                        <outlet property="tableView" destination="KN8-UM-zpg" id="dQ2-1I-WAG"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OTD-Z1-sMI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="984.05797101449286" y="-443.30357142857139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="aG3-iz-dOQ">
+            <objects>
+                <tableViewController storyboardIdentifier="Unused" id="OxK-cR-jmF" customClass="ViewController" customModule="ContactsMockup" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="LJG-0a-QHm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="OxK-cR-jmF" id="FeL-Dg-5sh"/>
+                            <outlet property="delegate" destination="OxK-cR-jmF" id="kAp-U8-Ir4"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3a-2G-qsL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591" y="319"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="UT8-7E-fBO">
+            <size key="intrinsicContentSize" width="348.33333333333331" height="348.33333333333331"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ProfilePicture" width="348.33334350585938" height="348.33334350585938"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

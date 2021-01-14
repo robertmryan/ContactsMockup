@@ -13,7 +13,36 @@
 		83E18E3125B0B5ED00E0D771 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E18E2F25B0B5ED00E0D771 /* Main.storyboard */; };
 		83E18E3325B0B5F400E0D771 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83E18E3225B0B5F400E0D771 /* Assets.xcassets */; };
 		83E18E3625B0B5F400E0D771 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83E18E3425B0B5F400E0D771 /* LaunchScreen.storyboard */; };
+		83E18E3F25B0B86D00E0D771 /* ContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E18E3E25B0B86D00E0D771 /* ContentCell.swift */; };
+		83E18E4D25B0CFA800E0D771 /* ContactsMockupKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E18E4B25B0CFA800E0D771 /* ContactsMockupKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		83E18E5025B0CFA800E0D771 /* ContactsMockupKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E18E4925B0CFA800E0D771 /* ContactsMockupKit.framework */; };
+		83E18E5125B0CFA800E0D771 /* ContactsMockupKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83E18E4925B0CFA800E0D771 /* ContactsMockupKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		83E18E5A25B0CFDB00E0D771 /* RoundedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E18E5925B0CFDB00E0D771 /* RoundedImageView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		83E18E4E25B0CFA800E0D771 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83E18E1E25B0B5ED00E0D771 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 83E18E4825B0CFA800E0D771;
+			remoteInfo = ContactsMockupKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83E18E5525B0CFA800E0D771 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83E18E5125B0CFA800E0D771 /* ContactsMockupKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		83E18E2625B0B5ED00E0D771 /* ContactsMockup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ContactsMockup.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +53,27 @@
 		83E18E3225B0B5F400E0D771 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		83E18E3525B0B5F400E0D771 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		83E18E3725B0B5F400E0D771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E18E3E25B0B86D00E0D771 /* ContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentCell.swift; sourceTree = "<group>"; };
+		83E18E4925B0CFA800E0D771 /* ContactsMockupKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ContactsMockupKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83E18E4B25B0CFA800E0D771 /* ContactsMockupKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsMockupKit.h; sourceTree = "<group>"; };
+		83E18E4C25B0CFA800E0D771 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		83E18E5925B0CFDB00E0D771 /* RoundedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImageView.swift; sourceTree = "<group>"; };
+		83E18E5D25B0DE6B00E0D771 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		83E18E5F25B0DF2000E0D771 /* Example.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Example.gif; sourceTree = "<group>"; };
+		83E18E6025B0DF4600E0D771 /* ViewHierarchy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ViewHierarchy.png; sourceTree = "<group>"; };
+		83E18E6125B0E03F00E0D771 /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		83E18E2325B0B5ED00E0D771 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E18E5025B0CFA800E0D771 /* ContactsMockupKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E18E4625B0CFA800E0D771 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -40,7 +86,12 @@
 		83E18E1D25B0B5ED00E0D771 = {
 			isa = PBXGroup;
 			children = (
+				83E18E5D25B0DE6B00E0D771 /* README.md */,
+				83E18E6125B0E03F00E0D771 /* LICENSE.md */,
+				83E18E5F25B0DF2000E0D771 /* Example.gif */,
+				83E18E6025B0DF4600E0D771 /* ViewHierarchy.png */,
 				83E18E2825B0B5ED00E0D771 /* ContactsMockup */,
+				83E18E4A25B0CFA800E0D771 /* ContactsMockupKit */,
 				83E18E2725B0B5ED00E0D771 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				83E18E2625B0B5ED00E0D771 /* ContactsMockup.app */,
+				83E18E4925B0CFA800E0D771 /* ContactsMockupKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -59,6 +111,7 @@
 				83E18E2925B0B5ED00E0D771 /* AppDelegate.swift */,
 				83E18E2B25B0B5ED00E0D771 /* SceneDelegate.swift */,
 				83E18E2D25B0B5ED00E0D771 /* ViewController.swift */,
+				83E18E3E25B0B86D00E0D771 /* ContentCell.swift */,
 				83E18E2F25B0B5ED00E0D771 /* Main.storyboard */,
 				83E18E3225B0B5F400E0D771 /* Assets.xcassets */,
 				83E18E3425B0B5F400E0D771 /* LaunchScreen.storyboard */,
@@ -67,7 +120,28 @@
 			path = ContactsMockup;
 			sourceTree = "<group>";
 		};
+		83E18E4A25B0CFA800E0D771 /* ContactsMockupKit */ = {
+			isa = PBXGroup;
+			children = (
+				83E18E5925B0CFDB00E0D771 /* RoundedImageView.swift */,
+				83E18E4B25B0CFA800E0D771 /* ContactsMockupKit.h */,
+				83E18E4C25B0CFA800E0D771 /* Info.plist */,
+			);
+			path = ContactsMockupKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		83E18E4425B0CFA800E0D771 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E18E4D25B0CFA800E0D771 /* ContactsMockupKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		83E18E2525B0B5ED00E0D771 /* ContactsMockup */ = {
@@ -77,15 +151,35 @@
 				83E18E2225B0B5ED00E0D771 /* Sources */,
 				83E18E2325B0B5ED00E0D771 /* Frameworks */,
 				83E18E2425B0B5ED00E0D771 /* Resources */,
+				83E18E5525B0CFA800E0D771 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				83E18E4F25B0CFA800E0D771 /* PBXTargetDependency */,
 			);
 			name = ContactsMockup;
 			productName = ContactsMockup;
 			productReference = 83E18E2625B0B5ED00E0D771 /* ContactsMockup.app */;
 			productType = "com.apple.product-type.application";
+		};
+		83E18E4825B0CFA800E0D771 /* ContactsMockupKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 83E18E5225B0CFA800E0D771 /* Build configuration list for PBXNativeTarget "ContactsMockupKit" */;
+			buildPhases = (
+				83E18E4425B0CFA800E0D771 /* Headers */,
+				83E18E4525B0CFA800E0D771 /* Sources */,
+				83E18E4625B0CFA800E0D771 /* Frameworks */,
+				83E18E4725B0CFA800E0D771 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ContactsMockupKit;
+			productName = ContactsMockupKit;
+			productReference = 83E18E4925B0CFA800E0D771 /* ContactsMockupKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +191,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					83E18E2525B0B5ED00E0D771 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					83E18E4825B0CFA800E0D771 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -115,6 +212,7 @@
 			projectRoot = "";
 			targets = (
 				83E18E2525B0B5ED00E0D771 /* ContactsMockup */,
+				83E18E4825B0CFA800E0D771 /* ContactsMockupKit */,
 			);
 		};
 /* End PBXProject section */
@@ -130,6 +228,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		83E18E4725B0CFA800E0D771 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -140,10 +245,27 @@
 				83E18E2E25B0B5ED00E0D771 /* ViewController.swift in Sources */,
 				83E18E2A25B0B5ED00E0D771 /* AppDelegate.swift in Sources */,
 				83E18E2C25B0B5ED00E0D771 /* SceneDelegate.swift in Sources */,
+				83E18E3F25B0B86D00E0D771 /* ContentCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		83E18E4525B0CFA800E0D771 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				83E18E5A25B0CFDB00E0D771 /* RoundedImageView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		83E18E4F25B0CFA800E0D771 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 83E18E4825B0CFA800E0D771 /* ContactsMockupKit */;
+			targetProxy = 83E18E4E25B0CFA800E0D771 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		83E18E2F25B0B5ED00E0D771 /* Main.storyboard */ = {
@@ -284,6 +406,7 @@
 		83E18E3B25B0B5F400E0D771 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +426,7 @@
 		83E18E3C25B0B5F400E0D771 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -316,6 +440,60 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		83E18E5325B0CFA800E0D771 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UZAPXQTVQ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ContactsMockupKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.ContactsMockupKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83E18E5425B0CFA800E0D771 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = UZAPXQTVQ4;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = ContactsMockupKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan.ContactsMockupKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -336,6 +514,15 @@
 			buildConfigurations = (
 				83E18E3B25B0B5F400E0D771 /* Debug */,
 				83E18E3C25B0B5F400E0D771 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		83E18E5225B0CFA800E0D771 /* Build configuration list for PBXNativeTarget "ContactsMockupKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				83E18E5325B0CFA800E0D771 /* Debug */,
+				83E18E5425B0CFA800E0D771 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
